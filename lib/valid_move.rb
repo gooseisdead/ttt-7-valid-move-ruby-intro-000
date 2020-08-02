@@ -6,9 +6,9 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-   if (board[index] == " ") || (board[index] == "") || (board[index] == nil)
+   if valid_move?
       return true
-   else
+   else (board[index] == " ") || (board[index] == "") || (board[index] == nil)
       return false
    end
 end
